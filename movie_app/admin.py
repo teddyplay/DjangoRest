@@ -1,7 +1,6 @@
 from django.contrib import admin
-from .models import *
+from . import models
 
-admin.site.register(Movie)
-admin.site.register(Director)
-admin.site.register(Review)
-# Register your models here.
+admin.site.register(models.Director)
+admin.site.register(models.Movie)
+admin.site.register(models.Review)
